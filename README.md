@@ -7,9 +7,8 @@ It visualizes IPL statistics such as matches per year, team wins, and top econom
 - The frontend consumes these APIs to display visually appealing charts using **Chart.js** and **Material-UI** components.
 
 ## 📊 Project Overview
-- The backend, built with Django REST Framework, processes IPL data from CSV files and provides REST APIs for analytics like matches per year, team wins, and top bowlers.
-- In the frontend React, I used `Axios` to call APIs from Django, `Chart.js` to visualize the IPL data in interactive graphs, and `Material-UI` to design a professional and responsive UI with ready-made React components (AppBar, Toolbar, Button).
-- It’s a clean, decoupled architecture — React and Django communicate through APIs, providing a smooth and interactive data visualization experience.
+- **In the backend,** built with Django REST Framework, processes IPL data from CSV files and provides REST APIs for analytics like matches per year, team wins, and top bowlers.
+- **In the frontend React,** I used `Axios` to call APIs from Django, `Chart.js` to visualize the IPL data in interactive graphs, and `Material-UI` to design a professional and responsive UI with ready-made React components (AppBar, Toolbar, Button).
 
 ## Key
 - **Backend:**  Django + Django REST Framework (API endpoints that aggregate IPL data)
@@ -24,7 +23,7 @@ It visualizes IPL statistics such as matches per year, team wins, and top econom
 - - Chart.js handles the visualization part. Once Axios fetches the data from Django, I pass it to Chart.js to render a bar or stacked chart — for example, the total matches per year
 ### 3. Material-UI (UI Design)
 - - Material-UI (now called MUI) is a `React component library` that implements Google’s Material Design — a modern design system for building clean, professional UIs.
-  - Material-UI gave me ready-made components like AppBar, Button, and Card for quick and attractive UI development.
+- - Material-UI gave me ready-made components like AppBar, Button, and Card for quick and attractive UI development.
  
   
 ## 🧠 Key Features
