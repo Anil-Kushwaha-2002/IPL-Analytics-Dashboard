@@ -1,27 +1,32 @@
 # 🏏 IPL Analytics Dashboard
 
-An interactive **IPL Data Analytics Dashboard** built using **Django (Backend)** and **ReactJS (Frontend)**.  
+**IPL Analytics Dashboard** is a **full-stack web application** built with **Django REST Framework  (Backend)** and **ReactJS (Frontend)**, designed to visualize and analyze **Indian Premier League (IPL)** data.
 It visualizes IPL statistics such as matches per year, team wins, and top economical bowlers using dynamic and responsive charts.
 
----
+- It processes large CSV datasets (`matches.csv`, `deliveries.csv`) and provides rich analytical insights through RESTful APIs.  
+- The frontend consumes these APIs to display visually appealing charts using **Chart.js** and **Material-UI** components.
 
 ## 📊 Project Overview
+- The backend, built with Django REST Framework, processes IPL data from CSV files and provides REST APIs for analytics like matches per year, team wins, and top bowlers.
+- In the frontend React, I used `Axios` to call APIs from Django, `Chart.js` to visualize the IPL data in interactive graphs, and `Material-UI` to design a professional and responsive UI with ready-made React components (AppBar, Toolbar, Button).
+- It’s a clean, decoupled architecture — React and Django communicate through APIs, providing a smooth and interactive data visualization experience.
 
-- **IPL Analytics Dashboard** is a full-stack web application built with **Django REST Framework** and **ReactJS**, designed to visualize and analyze **Indian Premier League (IPL)** data.
-
-- It processes large CSV datasets (`matches.csv`, `deliveries.csv`) and provides rich analytical insights through RESTful APIs.  
-The frontend consumes these APIs to display visually appealing charts using **Chart.js** and **Material-UI** components.
-
+## Key
 - **Backend:**  Django + Django REST Framework (API endpoints that aggregate IPL data)
 - **Frontend:**  React (Material-UI) + react-google-charts for interactive charts
-
-- It uses the Kaggle IPL dataset (matches.csv, deliveries.csv) and exposes endpoints to power the UI for the following tasks:
-1. Matches played per year (landing page — chart #1)
-2. Stacked bar chart of matches won by teams across seasons (landing page — chart #2)
-3. For a given year YYYY: extra runs conceded per team
-4. For a given year YYYY: top economical bowlers
-5. For a given year YYYY: matches played vs matches won per team
-
+  
+### 1. Axios (API Calls)
+- - `JavaScript library` used to make HTTP requests from the frontend to the backend (APIs)
+- - Axios acts as the bridge between my React frontend and Django backend.
+- - When a user visits a chart page, Axios requests data from my Django API — for example, `/api/matches-per-year/` — and then updates the chart dynamically.
+### 2. Chart.js (Visualization)
+- - Chart.js is a `charting library` that allows you to create beautiful, interactive graphs such as bar charts, line charts, pie charts, and more.
+- - Chart.js handles the visualization part. Once Axios fetches the data from Django, I pass it to Chart.js to render a bar or stacked chart — for example, the total matches per year
+### 3. Material-UI (UI Design)
+- - Material-UI (now called MUI) is a `React component library` that implements Google’s Material Design — a modern design system for building clean, professional UIs.
+  - Material-UI gave me ready-made components like AppBar, Button, and Card for quick and attractive UI development.
+ 
+  
 ## 🧠 Key Features
 
 - 📅 Matches played per year (Bar Chart)
